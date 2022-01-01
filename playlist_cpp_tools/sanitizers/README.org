@@ -1,0 +1,14 @@
+* Normal complier
+#+BEGIN_SRC shell
+g++-6 address.cpp -Wall -Werror
+#+END_SRC
+  
+* With santilizer
+#+BEGIN_SRC 
+g++-6 address.cpp -Wall -Werror -fsanitize=address
+#+END_SRC
+  
+* With santilizer and source map
+#+BEGIN_SRC 
+g++-6 address.cpp -Wall -Werror -fsanitize=address -g
+#+END_SRC
